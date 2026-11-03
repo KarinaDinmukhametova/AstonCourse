@@ -32,6 +32,7 @@ public abstract class Animal {
     }
 
     public static int getNumberAnimal() {
+
         return numberAnimal;
     }
 }

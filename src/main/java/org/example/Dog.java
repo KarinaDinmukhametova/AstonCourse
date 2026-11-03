@@ -7,4 +7,8 @@ public class Dog extends Animal {
         super(name, 500, 10);
         numberDog++;
     }
+
+    public static int getNumberDog() {
+        return  numberDog;
+    }
 }
