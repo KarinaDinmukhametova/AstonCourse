@@ -24,3 +24,4 @@ public class NumberComparatorTest {
         assertEquals("Числа равны", NumberComparator.compare(1,1) );
     }
 }
+
