@@ -7,24 +7,24 @@ import static org.testng.Assert.assertEquals;
 
 public class CalculatorTest {
 
-        @Test (description = "Негативная проверка. Вычитание чисел")
+        @Test (description = "Позитивная проверка. Вычитание чисел")
         void calculatorTestSubtract(){
-            assertEquals(Calculator.subtract(4,2),1);
+            assertEquals(Calculator.subtract(4,2),2);
         }
 
-        @Test (description = "Негативная проверка. Сложение чисел")
+        @Test (description = "Позитивная проверка. Сложение чисел")
         void calculatorTestAdd(){
-            assertEquals(Calculator.add(2,8), 11);
+            assertEquals(Calculator.add(2,8), 10);
         }
 
-        @Test (description = "Негативная проверка. Умножение чисел")
+        @Test (description = "Позитивная проверка. Умножение чисел")
         void calculatorTestMultiply(){
-            assertEquals(Calculator.multiply(2,8), 17);
+            assertEquals(Calculator.multiply(2,8), 16);
         }
 
-        @Test (description = "Негативная проверка. Деление чисел")
+        @Test (description = "Негативная проверка. Деление чисел", expectedExceptions = ArithmeticException.class)
         void calculatorTestDivide(){
-            assertEquals(Calculator.divide(20,2), 9);
+            Calculator.divide(20,0);
         }
 
 
