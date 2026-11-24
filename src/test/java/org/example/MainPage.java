@@ -35,7 +35,7 @@ public class MainPage {
         return text.replaceAll("\\s+", " ").trim();
     }
 
-    // логотипы платёжных систем на главной странице
+
     public boolean isLogo1Shown() {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("(//div[@class='pay__partners']//img)[1]"))).isDisplayed();
